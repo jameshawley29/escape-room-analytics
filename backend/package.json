@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "Backend for escape-room-analytics",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+},
+  "author": "James Hawley",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
