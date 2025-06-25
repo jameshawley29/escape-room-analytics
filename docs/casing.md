@@ -1,0 +1,12 @@
+| Type                             | Recommended Naming                          | Example                                                          | Why                                                 |
+| -------------------------------- | ------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------- |
+| **GitHub Repo**                  | kebab-case                                  | `escape-room-analytics`                                          | Widely used for repos (GitHub, GitLab, etc)         |
+| **Folders**                      | kebab-case                                  | `api-server`, `ingestion-service`, `analysis-worker`, `frontend` | Works cross-platform, prevents casing issues        |
+| **Files**                        | kebab-case for source files                 | `app.js`, `index.ts`, `docker-compose.yml`, `user-controller.ts` | Lowercase + hyphens (not camelCase) for portability |
+| **Docker Images**                | kebab-case                                  | `escape-room-ingestion`, `escape-room-api`                       | Docker recommends lowercase image names             |
+| **Branch Names (Git)**           | kebab-case with slashes                     | `feature/room-tracking`, `bugfix/availability-fix`               | Git flow friendly                                   |
+| **Environment Variables**        | ALL_CAPS with underscores                   | `DATABASE_URL`, `NODE_ENV`                                       | Standard in .env and CI/CD                          |
+| **Database Tables**              | snake_case (all lowercase with underscores) | `room_bookings`, `room_analytics`                                | Standard SQL convention                             |
+| **Database Columns**             | snake_case                                  | `created_at`, `booking_count`                                    | SQL and ORM-friendly                                |
+| **Class Names (Code)**           | PascalCase                                  | `RoomService`, `BookingProcessor`                                | Standard OOP                                        |
+| **Variables / Functions (Code)** | camelCase                                   | `getCurrentAvailability()`, `processBookings()`                  | JavaScript/TypeScript/Python best practice          |
